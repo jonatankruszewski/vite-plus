@@ -44,7 +44,7 @@ Options:
 Examples:
   vpx eslint .                                           # Run local eslint (or download)
   vpx create-vue my-app                                  # Download and run create-vue
-  vpx typescript@5.5.4 tsc --version                     # Run specific version
+  vpx oxlint@1.85.0 --version                             # Run specific version
   vpx -p cowsay -c 'echo \"hi\" | cowsay'                  # Shell mode with package";
 
 /// A globally installed binary found via `vp install -g`.
@@ -62,7 +62,7 @@ pub async fn execute_vpx(args: &[String], cwd: &AbsolutePath) -> i32 {
 
     // Show help
     if flags.help {
-        println!("{VPX_HELP}");
+        vp_shared::output::print_stdout_line(format_args!("{VPX_HELP}"));
         return 0;
     }
 

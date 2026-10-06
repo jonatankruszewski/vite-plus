@@ -2315,7 +2315,7 @@ dependencies = [
 [[package]]
 name = "fspy"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "anyhow",
@@ -2342,6 +2342,7 @@ dependencies = [
  "thiserror 2.0.20",
  "tokio",
  "tokio-util",
+ "vt_casefold",
  "which",
  "winapi",
  "wincode",
@@ -2351,7 +2352,7 @@ dependencies = [
 [[package]]
 name = "fspy_client_unix"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "anyhow",
@@ -2368,7 +2369,7 @@ dependencies = [
 [[package]]
 name = "fspy_detours_sys"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "cc",
  "winapi",
@@ -2377,7 +2378,7 @@ dependencies = [
 [[package]]
 name = "fspy_ipc_str"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "bumpalo",
@@ -2390,7 +2391,7 @@ dependencies = [
 [[package]]
 name = "fspy_nostd"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "atoi",
  "bitflags 2.13.2",
@@ -2404,7 +2405,7 @@ dependencies = [
 [[package]]
 name = "fspy_nostd_alloc"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "bump-scope",
@@ -2414,7 +2415,7 @@ dependencies = [
 [[package]]
 name = "fspy_preload_unix"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "ctor",
@@ -2431,7 +2432,7 @@ dependencies = [
 [[package]]
 name = "fspy_preload_windows"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "constcat",
@@ -2451,7 +2452,7 @@ dependencies = [
 [[package]]
 name = "fspy_seccomp_unotify"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "futures-util",
  "libc",
@@ -2468,7 +2469,7 @@ dependencies = [
 [[package]]
 name = "fspy_shared"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "bitflags 2.13.2",
@@ -2490,7 +2491,7 @@ dependencies = [
 [[package]]
 name = "fspy_shared_unix"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "allocator-api2",
  "anyhow",
@@ -2510,7 +2511,7 @@ dependencies = [
 [[package]]
 name = "fspy_shm"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "fspy_nostd",
  "windows-sys 0.61.2",
@@ -3789,7 +3790,7 @@ dependencies = [
 [[package]]
 name = "materialized_artifact"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "materialized_artifact_macros",
  "tempfile",
@@ -3798,7 +3799,7 @@ dependencies = [
 [[package]]
 name = "materialized_artifact_macros"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3918,28 +3919,6 @@ dependencies = [
  "log",
  "wasi",
  "windows-sys 0.61.2",
-]
-
-[[package]]
-name = "monostate"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fdc4dfdf312bb1b22fce127237589f4ee31652bc479f3d208332f32132aaccc9"
-dependencies = [
- "monostate-impl",
- "serde",
- "serde_core",
-]
-
-[[package]]
-name = "monostate-impl"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a656449eeb444c77364a3033f013c51869eee320c0dff805eb53024c0dfd435b"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 3.0.5",
 ]
 
 [[package]]
@@ -4478,9 +4457,9 @@ dependencies = [
 
 [[package]]
 name = "oxc"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a653a52b27d6bad0846e16d65aa1455419be260cfff170225adce49406be810f"
+checksum = "68d39d0db78a448fbb36d4fd4e3482bf42473107ba3e029c8cbed6c58623e723"
 dependencies = [
  "oxc_allocator",
  "oxc_ast",
@@ -4518,9 +4497,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_allocator"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8c5deaaa43f0813b6d4a18dcc5f41bea1996f193f0a55d0242831d7f29bfa16d"
+checksum = "f24a6005a6ff29f17c8782d1088772db6329b50cf8ad264f66df542215df7c2f"
 dependencies = [
  "allocator-api2",
  "hashbrown 0.17.1",
@@ -4532,9 +4511,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_ast"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7ef5ff9b1d70a32b100145065aec1c6c455c58b19c4681d092bd88c24c53972d"
+checksum = "6d07280aa0e456352d72a1a98d2a91a127358177d8b246feee615b99b778ea1f"
 dependencies = [
  "bitflags 2.13.2",
  "oxc_allocator",
@@ -4550,9 +4529,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_ast_macros"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c586b5760e383b5453db155be9f58ff6f68337e3e885ceef6817443dc6a10d17"
+checksum = "1ce1a0ca39332490e992eca47e20501f3774740718713b7ff53644ec590e2016"
 dependencies = [
  "phf 0.14.0",
  "proc-macro2",
@@ -4562,9 +4541,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_ast_visit"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f0cf0a82e610e199a916833a98b6fac20aebd18a5a98a5ac0ec93c23dd600a74"
+checksum = "d5dab648a994ca3b3675ccbea348b11006aca6c22d28a2bcc4fd22c891be47ed"
 dependencies = [
  "oxc_allocator",
  "oxc_ast",
@@ -4574,9 +4553,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_cfg"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7618a81bb29514ba5777f0f7a9cc191525dd0775a77267921acd527091259fa7"
+checksum = "b455385f7e30412a839652ea61a488fe13d87fa93ce03bca0ba69003aca44fb0"
 dependencies = [
  "bitflags 2.13.2",
  "itertools 0.15.0",
@@ -4588,9 +4567,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_codegen"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a018848abf2525c7fa8263b236a818871aed6157291f296fe783fdcfb0997b5"
+checksum = "4871f00a6863d3fe7730b1d6afb2be1fe89a4ed3aa62fabc87297498a2537953"
 dependencies = [
  "bitflags 2.13.2",
  "cow-utils",
@@ -4610,9 +4589,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_compat"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eacf03320d80691a1f4bbef3a7a9db348121f191d98e62a1b5728f8c92c131a6"
+checksum = "4c0415d2e950dc009db4e6c84cc7add8263f26b1600c81639c24cd14521a87ea"
 dependencies = [
  "cow-utils",
  "oxc-browserslist",
@@ -4623,18 +4602,18 @@ dependencies = [
 
 [[package]]
 name = "oxc_data_structures"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c21f86e763fc44e3bac2d48f235c9b8156ea173a36d593c3083eebff2426450"
+checksum = "ac3f0180ce8b10906ae03adcd76cbc3f67cc162459372197edbc978baf5ae7f9"
 dependencies = [
  "ropey",
 ]
 
 [[package]]
 name = "oxc_diagnostics"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f593a2a02a09fd2c17604587ca61f26266a4e5fbe15d44077a4a8889619097cb"
+checksum = "14144d3bdedc81c60fd465ae46ea16018f4a2ca11df8f4cfe85d6bcb320af9b9"
 dependencies = [
  "bytecount",
  "cow-utils",
@@ -4650,9 +4629,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_ecmascript"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea328d9a72149a9a971181374291f9a8bb109fa0703563b7dddb1e068620f1cc"
+checksum = "143f70d2c47792bcdd3e8c3e3fbdc24506043499c50d092c752afba1c6103620"
 dependencies = [
  "cow-utils",
  "dragonbox_ecma",
@@ -4671,9 +4650,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_estree"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dcd53514d0e7ac8026261a79694680a1186649af0eb7ccbae60d7a7a755f9519"
+checksum = "cc212d653c5ee92487e637b9b44a51b8430cd48040d5f4abdce933a2f9a5edd3"
 dependencies = [
  "dragonbox_ecma",
  "itoa",
@@ -4693,9 +4672,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_isolated_declarations"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d71b6a2f9562c860a8c8d06ff1ec1f9b858ab0886477ba58b148253f4b4935ee"
+checksum = "ca2179ba21fb1f3d77123efc76bb0c63e484be3ae6a74b6930aec9bb4262cd5a"
 dependencies = [
  "bitflags 2.13.2",
  "oxc_allocator",
@@ -4711,9 +4690,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_mangler"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7b733c8ecbede43b11b8e1bf12b53cb7525f14139ea0fc3f0ac9f9efe321f0f4"
+checksum = "97b93307093cd69d925eb866ab8434c9eeca1e74f7a0c3c7f93e0da8086f2d1c"
 dependencies = [
  "itertools 0.15.0",
  "oxc_allocator",
@@ -4730,9 +4709,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_minifier"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f78e90fe1a401187832eab1d052346f3299bc5d148fa5a3aa80bc871d1e0d18"
+checksum = "e2aae776f027ac6dc88e4c1a70c8868910df294d658f9d415e458a1bfd1c12c0"
 dependencies = [
  "cow-utils",
  "itoa",
@@ -4756,9 +4735,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_minify_napi"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b4641e94d7b912f68f3132f14b197c2157d48e1efbe15925f55faee111bfb5b2"
+checksum = "3367ea4d689efed49e68ef321aa480cd5c7bd50990256295af731a369fac3060"
 dependencies = [
  "lazy-regex",
  "napi",
@@ -4779,9 +4758,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_napi"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "897a300eae5d6177db57f0dc274549c479b46310231d394e55160e6bcd251da5"
+checksum = "ac51f106517745838560872bf00dd2cfab87e5ff85b4fa1fe398fe09eb7775ab"
 dependencies = [
  "napi",
  "napi-build",
@@ -4795,9 +4774,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_parser"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "44083f63120e1abe371cddd4eb209a580ab8490c2e5b42cacc11e7fe6fd1e7c2"
+checksum = "2193499addde2689649d31816af73dc10c32f1855dba40d61cee17d341b05d9e"
 dependencies = [
  "bitflags 2.13.2",
  "cow-utils",
@@ -4819,9 +4798,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_parser_napi"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4b5bc42889ca88506f4118a94dbd098d63b97b302bf449dd308bbc5e6ece4c55"
+checksum = "5e8255adfe0af10215c744337947db79e594ee5014a2cc27e394aca2b50e5b04"
 dependencies = [
  "napi",
  "napi-build",
@@ -4836,9 +4815,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_regular_expression"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bf8faa9da3f4d14d5a13c1facce217231cfb5071f05ce1affb6395dd25b1de9c"
+checksum = "b8330be1634468fdb3c9b850d831e1d82ded5c413d1154a46c0fc62eba2389bc"
 dependencies = [
  "bitflags 2.13.2",
  "oxc_allocator",
@@ -4894,9 +4873,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_semantic"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bb42b29a8296620e5343a802038d323fde50707b2502ccaa82e10bdf0fd904e4"
+checksum = "475e0f21fee076e57d9551415aeac08b843c29f7b65ced0ce09975845cea1bd6"
 dependencies = [
  "itertools 0.15.0",
  "memchr",
@@ -4918,9 +4897,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_sourcemap"
-version = "8.1.0"
+version = "9.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "73326286c78270f92c55e1a643a64daa558fc8a8e06fa0ddbe32fabb3d8eea11"
+checksum = "1133371a5fadc14b9f66a8fec14be3564a77647c7ab21b1ef0ec973bd82613ce"
 dependencies = [
  "base64-simd",
  "json-escape-simd",
@@ -4934,9 +4913,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_span"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "674178f9b8af8135559b51fea7a416ea18efe6aa03ed5491f86f0c75f2336a43"
+checksum = "f32dae5b09cc262867e383533cdc822c40bccb09d84bbdc889716c99265197a1"
 dependencies = [
  "compact_str 0.10.0",
  "oxc_allocator",
@@ -4948,9 +4927,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_str"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5fab366ed74ea0f6a67d2b70b3acfd1725999a4a62645efa330121c392e5061e"
+checksum = "49552c2eeb7cbfa118d55485fb38c6689be5ce1b313af7e0116e5d8da0dc22e0"
 dependencies = [
  "compact_str 0.10.0",
  "hashbrown 0.17.1",
@@ -4961,9 +4940,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_syntax"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae0769e32cf58d63139e3e21dfa8e2f8444b83d41be1733cd12de6ed1b9362e9"
+checksum = "87b3087c9e6f2039a4a46af8b0a9f9a5108ee3390a1fc8d98b24a5461e47888d"
 dependencies = [
  "bitflags 2.13.2",
  "cow-utils",
@@ -4982,9 +4961,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_transform_napi"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ab67c6f8012cb8625c8fae45b3a1adfd2d33c51870d3c156c856d640d785588"
+checksum = "5d395c29c295318beb5103d52fd821093e5959878ec065a12540ea8cdeeb3875"
 dependencies = [
  "napi",
  "napi-build",
@@ -4997,9 +4976,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_transformer"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7575bbaf825b93ea959c94907aafba9e9fea01116b3f455c0e06a34a13327543"
+checksum = "df937a25f6221b88c69f94f7763913e286a63360a653124a5642f8e1af274e72"
 dependencies = [
  "base64 0.23.1",
  "compact_str 0.10.0",
@@ -5027,9 +5006,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_transformer_plugins"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1bf5de6549085ec855e3e1b01fa3d4f2bcda8a26c31fa468205624552ba0f4f1"
+checksum = "cfa948ce8014f3479b01f453cb4a625828042d36216f52313bc89a8a530e447d"
 dependencies = [
  "cow-utils",
  "itoa",
@@ -5050,9 +5029,9 @@ dependencies = [
 
 [[package]]
 name = "oxc_traverse"
-version = "0.150.0"
+version = "0.152.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae5cc628f131fbb82083ec77a59191ee9a6f9e7b49e575b1b787313119df48f8"
+checksum = "c7404a745b6fe5e902da850211105bedb8da9fe648e63d1581afe3e585df1abc"
 dependencies = [
  "itoa",
  "oxc_allocator",
@@ -5739,7 +5718,7 @@ dependencies = [
 [[package]]
 name = "pty_terminal"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "anyhow",
  "portable-pty",
@@ -5749,7 +5728,7 @@ dependencies = [
 [[package]]
 name = "pty_terminal_test"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "anyhow",
  "portable-pty",
@@ -5760,7 +5739,7 @@ dependencies = [
 [[package]]
 name = "pty_terminal_test_client"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "base64 0.22.1",
  "getrandom 0.4.3",
@@ -6075,7 +6054,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "append-only-vec",
@@ -6097,7 +6076,6 @@ dependencies = [
  "oxc_index",
  "oxc_str",
  "oxc_traverse",
- "percent-encoding",
  "petgraph 0.8.3",
  "rayon",
  "regex",
@@ -6264,7 +6242,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_common"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6300,13 +6278,12 @@ dependencies = [
 
 [[package]]
 name = "rolldown_dev"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
  "futures",
  "rolldown",
- "rolldown-notify",
  "rolldown_common",
  "rolldown_dev_common",
  "rolldown_error",
@@ -6321,7 +6298,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_dev_common"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "derive_more",
  "rolldown_common",
@@ -6333,7 +6310,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_devtools"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "blake3",
  "rolldown_devtools_action",
@@ -6346,7 +6323,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_devtools_action"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "serde",
  "ts-rs",
@@ -6354,7 +6331,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_ecmascript"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "arcstr",
  "oxc",
@@ -6366,7 +6343,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_ecmascript_utils"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "memchr",
  "oxc",
@@ -6376,7 +6353,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_error"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6393,7 +6370,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_fs"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "oxc_resolver",
  "vfs",
@@ -6401,16 +6378,20 @@ dependencies = [
 
 [[package]]
 name = "rolldown_fs_watcher"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "rolldown-notify",
  "rolldown-notify-debouncer-full",
+ "rolldown_common",
  "rolldown_error",
+ "rustc-hash",
+ "tracing",
+ "walkdir",
 ]
 
 [[package]]
 name = "rolldown_plugin"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6439,7 +6420,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_asset_module"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "rolldown_common",
@@ -6451,7 +6432,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_bundle_analyzer"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "arcstr",
  "rolldown_common",
@@ -6465,7 +6446,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_chunk_import_map"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "arcstr",
  "rolldown_common",
@@ -6478,7 +6459,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_copy_module"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6491,7 +6472,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_data_url"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "arcstr",
  "base64-simd",
@@ -6504,7 +6485,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_esm_external_require"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "nodejs-built-in-modules",
  "rolldown_common",
@@ -6515,7 +6496,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_hmr"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "rolldown_common",
  "rolldown_plugin",
@@ -6523,7 +6504,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_isolated_declaration"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "arcstr",
  "oxc",
@@ -6537,10 +6518,11 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_lazy_compilation"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
+ "oxc",
  "rolldown_common",
  "rolldown_plugin",
  "rolldown_utils",
@@ -6549,7 +6531,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_oxc_runtime"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "arcstr",
  "phf 0.14.0",
@@ -6560,7 +6542,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_replace"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "oxc",
@@ -6576,7 +6558,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_utils"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6730,7 +6712,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_plugin_vite_resolve"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6784,7 +6766,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_resolver"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6799,7 +6781,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_sourcemap"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "criterion2",
  "memchr",
@@ -6809,7 +6791,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_std_utils"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "regex",
  "sugar_path",
@@ -6855,7 +6837,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_tracing"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "tracing",
  "tracing-chrome",
@@ -6871,7 +6853,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_utils"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6909,7 +6891,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_watcher"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "anyhow",
  "arcstr",
@@ -6928,7 +6910,7 @@ dependencies = [
 
 [[package]]
 name = "rolldown_workspace"
-version = "1.2.9"
+version = "1.2.12"
 
 [[package]]
 name = "ropey"
@@ -7629,7 +7611,7 @@ dependencies = [
 [[package]]
 name = "snapshot_test"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "serde",
  "serde_json",
@@ -7659,7 +7641,7 @@ dependencies = [
 [[package]]
 name = "socket_ipc"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "nix 0.31.3",
  "tempfile",
@@ -7754,7 +7736,7 @@ dependencies = [
 
 [[package]]
 name = "string_wizard"
-version = "1.2.9"
+version = "1.2.12"
 dependencies = [
  "insta",
  "memchr",
@@ -8553,6 +8535,7 @@ dependencies = [
  "idna",
  "percent-encoding",
  "serde",
+ "serde_derive",
 ]
 
 [[package]]
@@ -8668,7 +8651,7 @@ dependencies = [
 
 [[package]]
 name = "vite-plus-cli"
-version = "1.0.0-rc.0"
+version = "1.0.0"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -8699,6 +8682,7 @@ dependencies = [
  "vp_static_config",
  "vp_toolchain",
  "vt",
+ "vt_casefold",
  "vt_path",
  "vt_select",
  "vt_str",
@@ -8777,7 +8761,7 @@ dependencies = [
 
 [[package]]
 name = "vp_global_cli"
-version = "1.0.0-rc.0"
+version = "1.0.0"
 dependencies = [
  "chrono",
  "clap",
@@ -8794,6 +8778,7 @@ dependencies = [
  "indoc",
  "node-semver",
  "oxc_resolver",
+ "pty_terminal_test_client",
  "rustc-hash",
  "same-file",
  "serde",
@@ -9015,7 +9000,7 @@ checksum = "5c3082ca00d5a5ef149bb8b555a72ae84c9c59f7250f013ac822ac2e49b19c64"
 [[package]]
 name = "vt"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "anstream",
  "anyhow",
@@ -9044,6 +9029,7 @@ dependencies = [
  "tracing",
  "twox-hash",
  "uuid",
+ "vt_casefold",
  "vt_client_napi",
  "vt_glob",
  "vt_graph",
@@ -9072,13 +9058,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "vt_casefold"
+version = "0.0.0"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
+dependencies = [
+ "ref-cast",
+ "serde",
+]
+
+[[package]]
 name = "vt_client"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "fspy_ipc_str",
  "rustc-hash",
  "socket_ipc",
+ "vt_casefold",
  "vt_ipc_shared",
  "vt_path",
  "wincode",
@@ -9087,7 +9083,7 @@ dependencies = [
 [[package]]
 name = "vt_client_napi"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "napi",
  "napi-build",
@@ -9099,7 +9095,7 @@ dependencies = [
 [[package]]
 name = "vt_glob"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "globset",
  "thiserror 2.0.20",
@@ -9109,11 +9105,10 @@ dependencies = [
 [[package]]
 name = "vt_graph"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "anyhow",
  "async-trait",
- "monostate",
  "petgraph 0.8.3",
  "rustc-hash",
  "serde",
@@ -9131,7 +9126,7 @@ dependencies = [
 [[package]]
 name = "vt_graph_ser"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "petgraph 0.8.3",
  "serde",
@@ -9140,7 +9135,7 @@ dependencies = [
 [[package]]
 name = "vt_ipc_shared"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "fspy_ipc_str",
  "rustc-hash",
@@ -9150,7 +9145,7 @@ dependencies = [
 [[package]]
 name = "vt_path"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "diff-struct",
  "os_str_bytes",
@@ -9165,7 +9160,7 @@ dependencies = [
 [[package]]
 name = "vt_plan"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -9179,6 +9174,8 @@ dependencies = [
  "shell-escape",
  "thiserror 2.0.20",
  "tracing",
+ "url",
+ "vt_casefold",
  "vt_glob",
  "vt_graph",
  "vt_graph_ser",
@@ -9193,7 +9190,7 @@ dependencies = [
 [[package]]
 name = "vt_powershell"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "vt_path",
  "which",
@@ -9202,7 +9199,7 @@ dependencies = [
 [[package]]
 name = "vt_select"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "anyhow",
  "crossterm",
@@ -9213,7 +9210,7 @@ dependencies = [
 [[package]]
 name = "vt_server"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "fspy_ipc_str",
  "futures",
@@ -9223,6 +9220,7 @@ dependencies = [
  "tokio",
  "tokio-util",
  "tracing",
+ "vt_casefold",
  "vt_glob",
  "vt_ipc_shared",
  "vt_path",
@@ -9232,20 +9230,19 @@ dependencies = [
 [[package]]
 name = "vt_shell"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "brush-parser 0.4.0",
- "diff-struct",
  "serde",
  "shell-escape",
+ "vt_casefold",
  "vt_str",
- "wincode",
 ]
 
 [[package]]
 name = "vt_str"
 version = "0.1.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "compact_str 0.9.1",
  "diff-struct",
@@ -9256,7 +9253,7 @@ dependencies = [
 [[package]]
 name = "vt_workspace"
 version = "0.0.0"
-source = "git+https://github.com/voidzero-dev/vite-task.git?rev=790b15282344e00f508e74bc0e10ad0feffcbbf2#790b15282344e00f508e74bc0e10ad0feffcbbf2"
+source = "git+https://github.com/voidzero-dev/vite-task.git?rev=7d69d6577ecf6bd83deee32186de59918a712873#7d69d6577ecf6bd83deee32186de59918a712873"
 dependencies = [
  "clap",
  "petgraph 0.8.3",

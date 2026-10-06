@@ -1,8 +1,9 @@
+import fs from 'node:fs';
 import path from 'node:path';
 import { styleText } from 'node:util';
 
 import * as prompts from '@voidzero-dev/vite-plus-prompts';
-import semver from 'semver';
+import { satisfies } from 'verkit';
 
 import { parseMigrateArgs } from '../../binding/index.js';
 import {
@@ -15,7 +16,11 @@ import { writeAgentInstructions } from '../utils/agent.ts';
 import { unwrapCliParseOutcome } from '../utils/cli-parse.ts';
 import { isForceOverrideMode, SETUP_VP_VERSION, VITE_PLUS_VERSION } from '../utils/constants.ts';
 import { writeEditorConfigs } from '../utils/editor.ts';
-import { hasVitePlusDependency, readNearestPackageJson } from '../utils/package.ts';
+import {
+  hasPackageManagerDeclaration,
+  hasVitePlusDependency,
+  readNearestPackageJson,
+} from '../utils/package.ts';
 import { displayRelative } from '../utils/path.ts';
 import {
   cancelAndExit,
@@ -534,7 +539,8 @@ function showMigrationSummary(options: {
     report.inlinedLintStagedConfigCount +
     report.removedConfigCount +
     report.tsdownImportCount +
-    report.wrappedPluginConfigCount;
+    report.wrappedPluginConfigCount +
+    report.migratedTaskCacheConfigCount;
 
   log(
     `${styleText('magenta', '◇')} ${updatedExistingVitePlus ? 'Updated' : 'Migrated'} ${accent(projectLabel)} to Vite+ ${VITE_PLUS_VERSION}`,
@@ -615,6 +621,9 @@ function showMigrationSummary(options: {
       `${styleText('gray', '•')} Inline Vite plugins wrapped with lazyPlugins for check/lint/fmt`,
     );
   }
+  if (report.migratedTaskCacheConfigCount > 0) {
+    log(`${styleText('gray', '•')} Task cache settings moved under \`cache\``);
+  }
   if (report.gitHooksConfigured) {
     log(`${styleText('gray', '•')} Git hooks configured`);
   }
@@ -668,13 +677,13 @@ async function downloadSupportedPackageManager(options: {
 
   if (
     packageManager === PackageManager.yarn &&
-    semver.satisfies(downloadResult.version, '>=4.0.0 <4.10.0')
+    satisfies(downloadResult.version, '>=4.0.0 <4.10.0')
   ) {
     updateMigrationProgress('Upgrading Yarn');
     await upgradeYarn(rootDir, interactive, true);
   } else if (
     packageManager === PackageManager.pnpm &&
-    semver.satisfies(downloadResult.version, '< 9.5.0')
+    satisfies(downloadResult.version, '< 9.5.0')
   ) {
     failMigrationProgress('Migration failed');
     prompts.log.error(
@@ -683,7 +692,7 @@ async function downloadSupportedPackageManager(options: {
     cancelAndExit('Vite+ cannot automatically migrate this project yet.', 1);
   } else if (
     packageManager === PackageManager.npm &&
-    semver.satisfies(downloadResult.version, '< 8.3.0')
+    satisfies(downloadResult.version, '< 8.3.0')
   ) {
     failMigrationProgress('Migration failed');
     prompts.log.error(
@@ -1010,6 +1019,14 @@ async function main() {
 
   printHeader();
 
+  if (!fs.existsSync(path.join(projectPath, 'package.json'))) {
+    const target = displayRelative(projectPath) || '.';
+    cancelAndExit(
+      `Cannot migrate ${target}: no package.json found. Run vp migrate from a project root or pass its path explicitly.`,
+      1,
+    );
+  }
+
   const workspaceInfoOptional = await detectWorkspace(projectPath);
   if (
     workspaceInfoOptional.isMonorepo &&
@@ -1035,9 +1052,14 @@ async function main() {
 
   // Early return if already using Vite+ (only finalization/setup migrations may be needed)
   // In force-override mode (file: tgz overrides), skip this check and run full migration
-  const rootPkg = readNearestPackageJson(
-    workspaceInfoOptional.rootDir,
-  ) as PackageDependencies | null;
+  const rootPkg = readNearestPackageJson(workspaceInfoOptional.rootDir) as
+    | (PackageDependencies & { packageManager?: unknown; devEngines?: unknown })
+    | null;
+  if (workspaceInfoOptional.packageManager && !hasPackageManagerDeclaration(rootPkg)) {
+    prompts.log.warn(
+      `No package manager is declared in package.json; using ${workspaceInfoOptional.packageManager} for this migration without adding a pin. Run \`vp env pin\` to declare it explicitly.`,
+    );
+  }
   if (hasVitePlusDependency(rootPkg) && !isForceOverrideMode()) {
     // Runs with the detected package manager, which may be undefined for an
     // existing Vite+ project that has no lockfile/`packageManager` pin. In that
@@ -1174,7 +1196,8 @@ async function main() {
       coreMigrationResult.scripts ||
       coreMigrationResult.tsconfigTypes ||
       coreMigrationResult.imports ||
-      coreMigrationResult.tsdownConfig
+      coreMigrationResult.tsdownConfig ||
+      coreMigrationResult.taskCacheConfig
     ) {
       didMigrate = true;
     }
@@ -1211,11 +1234,17 @@ async function main() {
       if (vitestV5Preflight) {
         prompts.log.warn(vitestV5Preflight);
       }
+      for (const warning of coreMigrationResult.taskCacheWarnings) {
+        prompts.log.warn(warning);
+      }
       if (skippedSetupCandidates) {
         log(FULL_MIGRATION_HINT);
       }
       prompts.outro(`This project is already using Vite+! ${accent('Happy coding!')}`);
       return;
+    }
+    for (const warning of coreMigrationResult.taskCacheWarnings) {
+      addMigrationWarning(report, warning);
     }
 
     const setupOptions = getExistingVitePlusSetupOptions(options, fullSetup);

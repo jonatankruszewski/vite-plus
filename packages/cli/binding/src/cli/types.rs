@@ -4,8 +4,13 @@ use clap::{Parser, Subcommand};
 use rustc_hash::FxHashMap;
 use serde::{Deserialize, Serialize};
 use vt::{Command, ExitStatus, config::user::UserCacheConfig, plan_request::SyntheticPlanRequest};
+use vt_casefold::EnvName;
 use vt_path::AbsolutePath;
 use vt_str::Str;
+
+/// Environment variables for a spawned command. Names compare by the platform's
+/// rules (ASCII case-insensitive on Windows), the same as vite-task's session envs.
+pub(crate) type EnvMap = FxHashMap<EnvName<Arc<OsStr>>, Arc<OsStr>>;
 
 /// Resolved configuration from vite.config.ts
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
@@ -166,6 +171,9 @@ pub struct CliOptions {
     pub toolchain_manifest_path: String,
     pub vite_plus_package_path: String,
     pub resolve_universal_vite_config: ViteConfigResolverFn,
+    /// Host Node.js version (`process.version`), used for the package-manager
+    /// lifecycle env user agent.
+    pub node_version: Option<String>,
 }
 
 /// A resolved subcommand ready for execution.
@@ -173,7 +181,7 @@ pub(super) struct ResolvedSubcommand {
     pub(super) program: Arc<OsStr>,
     pub(super) args: Arc<[Str]>,
     pub(super) cache_config: UserCacheConfig,
-    pub(super) envs: Arc<FxHashMap<Arc<OsStr>, Arc<OsStr>>>,
+    pub(super) envs: Arc<EnvMap>,
 }
 
 impl ResolvedSubcommand {
